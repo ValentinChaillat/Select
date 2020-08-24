@@ -1,9 +1,59 @@
-.App {
-  background-color: red;
-  h1 {
-    color: red;
-  }
-  p {
-    color: green;
-  }
+$blanc: #ffffff;
+$bleufonce: #1753a1;
+$bleuclaire: #3299dd;
+$bleuturquoise: #48a6e4;
+$newOption: #80c1ec;
+$gris: #838383;
+$temp: 0.2s;
+
+body {
+  background-image: url("../img/fond.png");
+}
+.searchbar {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $gris;
+  font-weight: 200;
+  text-align: center;
+}
+
+.optionClassic {
+  font-size: 2em;
+  padding: 5px 10px;
+  border: 2px solid $blanc;
+  border-radius: 5px;
+  color: $blanc;
+  background-color: transparent;
+  transition: $temp ease-in-out;
+}
+.optionClassic:hover {
+  background-color: $bleuturquoise;
+}
+.optionClassic::placeholder {
+  color: $blanc;
+}
+.optionSelected {
+  background-color: $bleuclaire;
+}
+.newOptionInput {
+  background-color: $newOption;
+  margin-right: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.newOptionButton {
+  margin-left: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: none;
+  background-color: $bleufonce;
+}
+.optionDisplayed {
+  color: $blanc;
+  background-color: transparent;
+  font-size: 2em;
+  font-weight: 200;
+  text-align: center;
 }
